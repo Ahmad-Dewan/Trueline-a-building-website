@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Trueline Construction — Portland, OR</title>
+<meta name="description" content="Trueline Construction builds residential, commercial, and renovation projects across the Portland metro, with fixed-price bids and in-house crews.">
+<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@600;700;800&amp;family=Archivo:wght@400;500;600;700&amp;family=Space+Mono:wght@400;700&amp;display=swap" rel="stylesheet">
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+
+<svg class="icon-sprite" aria-hidden="true">
+  <defs>
+    <symbol id="i-hardhat" viewBox="0 0 24 24"><path d="M4 16.5C4 10.7 7.6 6 12 6C16.4 6 20 10.7 20 16.5H4Z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/><path d="M2.5 16.5H21.5V17.6C21.5 18.2 21 18.7 20.4 18.7H3.6C3 18.7 2.5 18.2 2.5 17.6V16.5Z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/><circle cx="12" cy="6" r="1.1" fill="currentColor" stroke="none"/></symbol>
+    <symbol id="i-building" viewBox="0 0 24 24"><rect x="5" y="3.5" width="14" height="17" rx="1" fill="none" stroke="currentColor" stroke-width="1.6"/><rect x="7.5" y="6.3" width="2.6" height="2.6" fill="currentColor" stroke="none"/><rect x="13.9" y="6.3" width="2.6" height="2.6" fill="currentColor" stroke="none"/><rect x="7.5" y="11" width="2.6" height="2.6" fill="currentColor" stroke="none"/><rect x="13.9" y="11" width="2.6" height="2.6" fill="currentColor" stroke="none"/><rect x="10.1" y="15.8" width="3.8" height="4.7" fill="currentColor" stroke="none"/></symbol>
+    <symbol id="i-hammer" viewBox="0 0 24 24"><path d="M6 19L14.5 10.5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><path d="M13 6L19 6.3L19.3 9.3L15.5 13L11 8.5L13 6Z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><path d="M4 12.5L9.5 18L20 6.5" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-star" viewBox="0 0 24 24"><polygon points="12,3 14.7,9.3 21.5,9.9 16.3,14.3 17.9,21 12,17.3 6.1,21 7.7,14.3 2.5,9.9 9.3,9.3" fill="currentColor" stroke="none"/></symbol>
+    <symbol id="i-phone" viewBox="0 0 24 24"><path d="M6.6 10.8C8 13.6 10.4 16 13.2 17.4L15.3 15.3C15.6 15 16 14.9 16.3 15C17.5 15.4 18.8 15.6 20 15.6C20.6 15.6 21 16 21 16.6V20C21 20.6 20.6 21 20 21C10.6 21 3 13.4 3 4C3 3.4 3.4 3 4 3H7.4C8 3 8.4 3.4 8.4 4C8.4 5.2 8.6 6.5 9 7.7C9.1 8 9 8.4 8.7 8.7L6.6 10.8Z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></symbol>
+    <symbol id="i-mail" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M3.5 6.5L12 13L20.5 6.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-pin" viewBox="0 0 24 24"><path d="M12 22C12 22 19 15.4 19 10A7 7 0 0 0 5 10C5 15.4 12 22 12 22Z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><circle cx="12" cy="10" r="2.3" fill="none" stroke="currentColor" stroke-width="1.6"/></symbol>
+    <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M12 7.5V12L15.5 14" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M4 12H19M13 6L19 12L13 18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-camera" viewBox="0 0 24 24"><rect x="3" y="7" width="18" height="13" rx="2" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M8 7L9.5 4.5H14.5L16 7" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><circle cx="12" cy="13.5" r="3.4" fill="none" stroke="currentColor" stroke-width="1.6"/></symbol>
+  </defs>
+</svg>
+
+<!-- navbar -->
+<nav class="navbar navbar-expand-lg custom-navbar sticky-top" id="top">
+  <div class="container">
+    <a class="navbar-brand" href="#top"><svg width="24" height="24"><use href="#i-hardhat"/></svg>Trueline</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="mainNav">
+      <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-4">
+        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+        <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+        <li class="nav-item"><a class="nav-link" href="#reviews">Reviews</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        <li class="nav-item ms-lg-2"><a class="btn btn-cta" href="#contact">Get a quote</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<main>
+
+  <!-- hero section -->
+  <header class="hero">
+    <div class="hero-overlay"></div>
+    <div class="container hero-content">
+      <p class="eyebrow eyebrow-light"><span class="tick" aria-hidden="true"></span>18 years building Portland</p>
+      <h1>Built plumb.<br>Built true.<br>Built to last.</h1>
+      <p class="hero-lead">Trueline handles custom homes, commercial builds, and renovations across the Portland metro — with fixed-price bids and a crew that shows up when we say we will.</p>
+      <div class="hero-actions">
+        <a href="#contact" class="btn btn-cta btn-lg">Get a free estimate</a>
+        <a href="#projects" class="btn btn-outline-light btn-lg">See our projects</a>
+      </div>
+      <p class="hero-fineprint" style="margin-top: 10px;">Licensed, bonded &amp; insured in Oregon · Free on-site estimates</p>
+    </div>
+    <svg class="dim-divider" viewBox="0 0 1200 60" preserveAspectRatio="none" aria-hidden="true">
+      <g class="dim-anim">
+        <line x1="20" y1="30" x2="1180" y2="30" stroke="currentColor" stroke-width="2"/>
+        <path d="M20 30L33 23M20 30L33 37" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+        <path d="M1180 30L1167 23M1180 30L1167 37" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+        <line x1="300" y1="21" x2="300" y2="39" stroke="currentColor" stroke-width="1.5"/>
+        <line x1="600" y1="21" x2="600" y2="39" stroke="currentColor" stroke-width="1.5"/>
+        <line x1="900" y1="21" x2="900" y2="39" stroke="currentColor" stroke-width="1.5"/>
+        <text x="300" y="15" class="dim-label">18'-4"</text>
+        <text x="600" y="15" class="dim-label">24'-0"</text>
+        <text x="900" y="15" class="dim-label">12'-6"</text>
+      </g>
+    </svg>
+  </header>
+
+  <!-- trust strip -->
+  <section class="trust-strip">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-md-4 spec-plate">
+          <p class="mono-label">01 / On schedule</p>
+          <p>We build in phases with real dates, not rough guesses — and we call before a date slips.</p>
+        </div>
+        <div class="col-md-4 spec-plate">
+          <p class="mono-label">02 / Fixed-price bids</p>
+          <p>The number on your contract is the number on your invoice. No surprise change orders.</p>
+        </div>
+        <div class="col-md-4 spec-plate">
+          <p class="mono-label">03 / Licensed crews</p>
+          <p>Every trade on-site is licensed, insured, and employed directly by us — no unvetted subs.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- about section -->
+  <section class="about-section" id="about">
+    <div class="container">
+      <div class="row align-items-center g-5">
+        <div class="col-lg-5">
+          <div class="about-media">
+            <img src="https://picsum.photos/seed/trueline-about1/460/560" alt="Trueline crew framing a new build" class="about-img about-img-1">
+            <img src="https://picsum.photos/seed/trueline-about2/320/380" alt="Site foreman reviewing blueprints" class="about-img about-img-2">
+          </div>
+        </div>
+        <div class="col-lg-7">
+          <p class="eyebrow">About Trueline</p>
+          <h2>A crew that answers the phone.</h2>
+          <p class="lead-copy">Trueline started with three guys and one truck in 2008. Today we're a full crew of carpenters, electricians, and project managers — but we kept the part that mattered: you call, and someone who actually knows your project picks up.</p>
+          <div class="stat-row">
+            <div><span class="stat-num">18</span><span class="stat-label">Years in business</span></div>
+            <div><span class="stat-num">210+</span><span class="stat-label">Projects built</span></div>
+            <div><span class="stat-num">4.8/5</span><span class="stat-label">Average review</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- services -->
+  <section class="services-section" id="services">
+    <div class="container">
+      <div class="section-head">
+        <p class="eyebrow">What we build</p>
+        <h2>Three kinds of projects. One crew you can trust with any of them.</h2>
+      </div>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <article class="service-card">
+            <span class="service-icon"><svg width="26" height="26"><use href="#i-hardhat"/></svg></span>
+            <h3>Residential Construction</h3>
+            <p>Ground-up custom homes and additions, designed around how your family actually lives.</p>
+            <a href="#contact" class="card-link">Get a quote <svg width="14" height="14"><use href="#i-arrow"/></svg></a>
+          </article>
+        </div>
+        <div class="col-md-4">
+          <article class="service-card">
+            <span class="service-icon"><svg width="26" height="26"><use href="#i-building"/></svg></span>
+            <h3>Commercial Buildouts</h3>
+            <p>Retail, office, and light-industrial spaces built to code and on your opening-day deadline.</p>
+            <a href="#contact" class="card-link">Get a quote <svg width="14" height="14"><use href="#i-arrow"/></svg></a>
+          </article>
+        </div>
+        <div class="col-md-4">
+          <article class="service-card">
+            <span class="service-icon"><svg width="26" height="26"><use href="#i-hammer"/></svg></span>
+            <h3>Renovation &amp; Remodels</h3>
+            <p>Kitchens, additions, and whole-home remodels — permit paperwork included.</p>
+            <a href="#contact" class="card-link">Get a quote <svg width="14" height="14"><use href="#i-arrow"/></svg></a>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- projects -->
+  <section class="projects-section" id="projects">
+    <div class="container">
+      <div class="section-head">
+        <p class="eyebrow">Our work</p>
+        <h2>A few projects we're proud to have our name on.</h2>
+      </div>
+      <div class="row g-4">
+        <div class="col-md-6 col-lg-4">
+          <figure class="project-card">
+            <img src="https://picsum.photos/seed/trueline-proj1/500/380" alt="The Alder Street Remodel">
+            <figcaption><span class="mono-label">Renovation</span><h3>The Alder Street Remodel</h3></figcaption>
+          </figure>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <figure class="project-card">
+            <img src="https://picsum.photos/seed/trueline-proj2/500/380" alt="Cedar Hills Office Park">
+            <figcaption><span class="mono-label">Commercial</span><h3>Cedar Hills Office Park</h3></figcaption>
+          </figure>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <figure class="project-card">
+            <img src="https://picsum.photos/seed/trueline-proj3/500/380" alt="Riverside Custom Home">
+            <figcaption><span class="mono-label">Residential</span><h3>Riverside Custom Home</h3></figcaption>
+          </figure>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <figure class="project-card">
+            <img src="https://picsum.photos/seed/trueline-proj4/500/380" alt="Northgate Retail Fit-Out">
+            <figcaption><span class="mono-label">Commercial</span><h3>Northgate Retail Fit-Out</h3></figcaption>
+          </figure>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <figure class="project-card">
+            <img src="https://picsum.photos/seed/trueline-proj5/500/380" alt="Maple Grove Addition">
+            <figcaption><span class="mono-label">Renovation</span><h3>Maple Grove Addition</h3></figcaption>
+          </figure>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <figure class="project-card">
+            <img src="https://picsum.photos/seed/trueline-proj6/500/380" alt="Sellwood Duplex">
+            <figcaption><span class="mono-label">Residential</span><h3>Sellwood Duplex</h3></figcaption>
+          </figure>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- mid cta -->
+  <section class="mid-cta">
+    <div class="container">
+      <h2>Have blueprints already?<br>Let's price them out.</h2>
+      <a href="#contact" class="btn btn-cta btn-lg">Get a free estimate</a>
+    </div>
+    <svg class="dim-divider dim-divider-light" viewBox="0 0 1200 60" preserveAspectRatio="none" aria-hidden="true">
+      <g class="dim-anim">
+        <line x1="20" y1="30" x2="1180" y2="30" stroke="currentColor" stroke-width="2"/>
+        <path d="M20 30L33 23M20 30L33 37" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+        <path d="M1180 30L1167 23M1180 30L1167 37" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+      </g>
+    </svg>
+  </section>
+
+  <!-- testimonials -->
+  <section class="testimonials-section" id="reviews">
+    <div class="container">
+      <div class="section-head">
+        <p class="eyebrow">Client reviews</p>
+        <h2>What it's like to build with us.</h2>
+      </div>
+      <div class="row g-4">
+        <div class="col-lg-4">
+          <blockquote class="testimonial-card">
+            <div class="testimonial-stars" aria-label="5 out of 5 stars"><svg width="14" height="14"><use href="#i-star"/></svg><svg width="14" height="14"><use href="#i-star"/></svg><svg width="14" height="14"><use href="#i-star"/></svg><svg width="14" height="14"><use href="#i-star"/></svg><svg width="14" height="14"><use href="#i-star"/></svg></div>
+            <p>They gave us a real move-in date in week one and hit it. That never happens in this industry.</p>
+            <footer><img src="https://i.pravatar.cc/80?img=15" alt=""><div><span>Raj Patel</span><span class="testimonial-role">Residential client</span></div></footer>
+          </blockquote>
+        </div>
+        <div class="col-lg-4">
+          <blockquote class="testimonial-card">
+            <div class="testimonial-stars" aria-label="5 out of 5 stars"><svg width="14" height="14"><use href="#i-star"/></svg><svg width="14" height="14"><use href="#i-star"/></svg><svg width="14" height="14"><use href="#i-star"/></svg><svg width="14" height="14"><use href="#i-star"/></svg><svg width="14" height="14"><use href="#i-star"/></svg></div>
+            <p>Our store opened on the date in the contract, not two months after. That's the whole review.</p>
+            <footer><img src="https://i.pravatar.cc/80?img=16" alt=""><div><span>Colleen Ward</span><span class="testimonial-role">Commercial client</span></div></footer>
+          </blockquote>
+        </div>
+        <div class="col-lg-4">
+          <blockquote class="testimonial-card">
+            <div class="testimonial-stars" aria-label="4.5 out of 5 stars"><svg width="14" height="14"><use href="#i-star"/></svg><svg width="14" height="14"><use href="#i-star"/></svg><svg width="14" height="14"><use href="#i-star"/></svg><svg width="14" height="14"><use href="#i-star"/></svg><svg width="14" height="14"><use href="#i-star"/></svg></div>
+            <p>The permit process alone would've broken us without their PM handling it start to finish.</p>
+            <footer><img src="https://i.pravatar.cc/80?img=17" alt=""><div><span>Devon Ashworth</span><span class="testimonial-role">Renovation client</span></div></footer>
+          </blockquote>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- stats -->
+  <section class="stats-band">
+    <div class="container">
+      <div class="row g-4 text-center">
+        <div class="col-6 col-lg-3">
+          <p class="big-stat">210+</p>
+          <p class="mono-label">Projects completed</p>
+        </div>
+        <div class="col-6 col-lg-3">
+          <p class="big-stat">18</p>
+          <p class="mono-label">Years in business</p>
+        </div>
+        <div class="col-6 col-lg-3">
+          <p class="big-stat">97%</p>
+          <p class="mono-label">Clients who refer us</p>
+        </div>
+        <div class="col-6 col-lg-3">
+          <p class="big-stat">$0</p>
+          <p class="mono-label">Change-order surprises*</p>
+        </div>
+      </div>
+      <p class="stats-footnote">*On fixed-price contracts, when scope doesn't change.</p>
+    </div>
+  </section>
+
+  <!-- features -->
+  <section class="features-section">
+    <div class="container">
+      <div class="section-head">
+        <p class="eyebrow">Why Trueline</p>
+        <h2>What makes us different.</h2>
+      </div>
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-4 g-4">
+        <div class="col">
+          <div class="feature-card">
+            <span class="feature-icon"><svg width="22" height="22"><use href="#i-hardhat"/></svg></span>
+            <h3>In-house crews</h3>
+            <p>No unvetted subcontractors — every trade on a Trueline site is on our payroll.</p>
+          </div>
+        </div>
+        <div class="col">
+          <div class="feature-card">
+            <span class="feature-icon"><svg width="22" height="22"><use href="#i-camera"/></svg></span>
+            <h3>Daily photo logs</h3>
+            <p>A photo update from the site every single day we're on it, rain or shine.</p>
+          </div>
+        </div>
+        <div class="col">
+          <div class="feature-card">
+            <span class="feature-icon"><svg width="22" height="22"><use href="#i-check"/></svg></span>
+            <h3>Fixed-price bidding</h3>
+            <p>One number, agreed before we break ground, honored when we hand you the keys.</p>
+          </div>
+        </div>
+        <div class="col">
+          <div class="feature-card">
+            <span class="feature-icon"><svg width="22" height="22"><use href="#i-building"/></svg></span>
+            <h3>Permit handling</h3>
+            <p>We pull permits and schedule inspections so you don't have to learn city code.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- contact section -->
+  <section class="contact-section" id="contact">
+    <div class="container">
+      <div class="row g-5">
+        <div class="col-lg-5">
+          <p class="eyebrow eyebrow-light">Get a free estimate</p>
+          <h2>Ready to break ground?</h2>
+          <p class="contact-lead">Tell us a little about the project and we'll call within one business day with next steps — usually with a rough number on the spot.</p>
+          <ul class="contact-list">
+            <li><svg width="18" height="18"><use href="#i-phone"/></svg>(503) 555-0148</li>
+            <li><svg width="18" height="18"><use href="#i-mail"/></svg>estimates@truelineconstruction.example</li>
+            <li><svg width="18" height="18"><use href="#i-pin"/></svg>4820 SE Foster Rd, Portland, OR</li>
+          </ul>
+          <div class="hours-readout">
+            <p class="mono-label"><svg width="16" height="16"><use href="#i-clock"/></svg>Office hours</p>
+            <div class="hours-row"><span>Mon – Fri</span><span>7:00 – 17:00</span></div>
+            <div class="hours-row"><span>Saturday</span><span>By appointment</span></div>
+            <div class="hours-row"><span>Sunday</span><span>Closed</span></div>
+          </div>
+        </div>
+        <div class="col-lg-7">
+          <form class="estimate-form" action="#" method="get">
+            <div class="row g-3">
+              <div class="col-md-6">
+                <label for="f-name" class="form-label">Full name</label>
+                <input type="text" id="f-name" name="name" class="form-control" placeholder="Jordan Alvarez" required>
+              </div>
+              <div class="col-md-6">
+                <label for="f-phone" class="form-label">Phone</label>
+                <input type="tel" id="f-phone" name="phone" class="form-control" placeholder="(503) 000-0000">
+              </div>
+              <div class="col-md-6">
+                <label for="f-email" class="form-label">Email</label>
+                <input type="email" id="f-email" name="email" class="form-control" placeholder="you@example.com" required>
+              </div>
+              <div class="col-md-6">
+                <label for="f-type" class="form-label">Project type</label>
+                <select id="f-type" name="project-type" class="form-select">
+                  <option>Residential Construction</option>
+                  <option>Commercial Buildout</option>
+                  <option>Renovation &amp; Remodel</option>
+                  <option>Not sure yet</option>
+                </select>
+              </div>
+              <div class="col-12">
+                <label for="f-details" class="form-label">Tell us about the project</label>
+                <textarea id="f-details" name="details" class="form-control" rows="4" placeholder="Rough scope, timeline, address or neighborhood — whatever you've got."></textarea>
+              </div>
+              <div class="col-12">
+                <button type="submit" class="btn btn-cta btn-lg w-100">Request my estimate</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- footer -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="row g-4 footer-grid">
+      <div class="col-lg-4">
+        <a href="#top" class="navbar-brand logo-light"><svg width="24" height="24"><use href="#i-hardhat"/></svg>Trueline</a>
+        <p class="footer-blurb">Residential, commercial, and renovation construction across the Portland metro — built plumb, built true.</p>
+      </div>
+      <div class="col-6 col-lg-2">
+        <h4>Company</h4>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#projects">Projects</a>
+        <a href="#reviews">Reviews</a>
+      </div>
+      <div class="col-6 col-lg-2">
+        <h4>Resources</h4>
+        <a href="#">Blog</a>
+        <a href="#">Careers</a>
+        <a href="#">FAQ</a>
+      </div>
+      <div class="col-lg-4">
+        <h4>Contact us</h4>
+        <p class="footer-contact-line"><svg width="16" height="16"><use href="#i-phone"/></svg>(503) 555-0148</p>
+        <p class="footer-contact-line"><svg width="16" height="16"><use href="#i-mail"/></svg>estimates@truelineconstruction.example</p>
+        <p class="footer-contact-line"><svg width="16" height="16"><use href="#i-pin"/></svg>4820 SE Foster Rd, Portland, OR</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Trueline Construction. All rights reserved.</p>
+      <div class="footer-legal">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms &amp; Conditions</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
