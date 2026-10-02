@@ -30,11 +30,7 @@ A modern, high-performance, and fully responsive landing page designed and devel
 
 ---
 
-## 📂 Project Structure
+## 👤 Author
+Developed with ❤️ by Ahmad Yasser Dewan
 
-```text
-├── index.html        # Main HTML file
-├── css/
-│   ├── style.css     # Custom CSS stylesheet
-│   └── bootstrap.min.css
-└── README.md         # Project documentation
+Email: ahmadyasserdewan@gmail.com
